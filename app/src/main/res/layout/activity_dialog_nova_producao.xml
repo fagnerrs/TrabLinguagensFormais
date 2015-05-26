@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:background="@drawable/caderno_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+nova_prod/text_nao_terminal"
+        android:text="Não Terminal" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+nova_prod/edittext_nao_terminal"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminal" 
+        android:id="@+nova_prod/text_terminal"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+nova_prod/edittext_terminal"
+        android:inputType="text" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/botao_conf"
+        android:layout_margin="2dp"
+        android:id="@+nova_prod/botao_confirmar"
+        android:text="Confirmar" />
+        
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:background="@drawable/botao_canc"
+        android:id="@+nova_prod/botao_cancelar"
+        android:text="Cancelar" />
+    
+    </LinearLayout>
+
+</LinearLayout>

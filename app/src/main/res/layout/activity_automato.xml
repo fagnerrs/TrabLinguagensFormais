@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/caderno_back">
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3"
+	    android:orientation="horizontal">
+	    
+	    <RelativeLayout 
+	        android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="3"
+		    android:id="@+automato/main_container" >
+	        
+	    </RelativeLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:orientation="vertical"
+		    android:background="#FFFFFFFF">
+	        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Nodos" />
+	        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:orientation="horizontal"
+				    android:id="@+automato/terminais">
+				    
+			        <LinearLayout 
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="1"
+			            android:orientation="vertical"
+			            android:id="@+automato/nodos" >
+			        </LinearLayout>
+	
+		        </LinearLayout>
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#FFFFFFFF"
+	    android:orientation="horizontal">
+	
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="3"
+		    android:orientation="vertical">
+			
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="Validar Sentença" />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal">
+
+			    <EditText
+			        android:id="@+automato/edittext_sentenca"
+			        android:layout_width="0dp"
+			        android:layout_height="30dp"
+			        android:layout_weight="3.00"
+			        android:focusable="false"
+			        android:inputType="text" />
+		    		    
+			    <ImageButton
+			        android:layout_width="0dp"
+			        android:layout_height="30dp"
+			        android:layout_weight="1"
+			        android:adjustViewBounds="true"
+			        android:background="#00000000"
+			        android:id="@+automato/button_voz"
+			        android:src="@drawable/botao_voz" />
+
+		    </LinearLayout>
+		    
+		    <ImageButton
+		        android:id="@+automato/button_determin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:background="#00000000"
+		        android:src="@drawable/btn_determin" />
+		    
+	    </LinearLayout>	    
+	    
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:orientation="horizontal">
+		    
+		    
+	    </LinearLayout>	    
+	    
+			</LinearLayout>
+</LinearLayout>
